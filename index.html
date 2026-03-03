@@ -6,36 +6,37 @@
     <title>AccuSport | Player Intelligence Infrastructure</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { background-color: #0a0c12; color: white; scroll-behavior: smooth; font-family: sans-serif; }
+        body { background-color: #0a0c12; color: white; scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
         .accent-orange { color: #FF6600; }
         .bg-orange { background-color: #FF6600; }
+        .text-shadow-pro { text-shadow: 0 0 20px rgba(255, 102, 0, 0.3); }
     </style>
 </head>
 <body>
     <nav class="fixed w-full z-50 bg-[#0a0c12]/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 80L45 20H55L80 80H68L62 65H38L32 80H20ZM42 55H58L50 35L42 55Z" fill="#1e293b"/>
+                <svg width="35" height="35" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 80L45 20H55L80 80H68L62 65H38L32 80H20ZM42 55H58L50 35L42 55Z" fill="white"/>
                     <path d="M45 40L35 60H50L45 80L65 50H50L55 30L45 40Z" fill="#FF6600"/>
                 </svg>
                 <span class="text-xl font-bold tracking-tighter uppercase">ACCU<span class="accent-orange">SPORT</span></span>
             </div>
             <div class="space-x-8 hidden md:flex">
-                <a href="#pipeline" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest">Pipeline</a>
-                <a href="#inteligencia" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest">Inteligencia</a>
-                <a href="#visibilidad" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest">Visibilidad</a>
+                <a href="#pipeline" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest font-semibold">Pipeline</a>
+                <a href="#inteligencia" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest font-semibold">Inteligencia</a>
+                <a href="#visibilidad" class="hover:text-[#FF6600] transition text-xs uppercase tracking-widest font-semibold">Visibilidad</a>
             </div>
         </div>
     </nav>
 
     <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-6xl md:text-8xl font-bold mb-6 tracking-tighter italic">ACCU<span class="accent-orange text-shadow-lg">SPORT</span></h1>
-        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl font-light">
-            Infraestructura de inteligencia de jugadores integrada verticalmente.
+        <h1 class="text-6xl md:text-8xl font-black mb-6 tracking-tighter italic text-shadow-pro uppercase">ACCU<span class="accent-orange">SPORT</span></h1>
+        <p class="text-xl md:text-2xl text-gray-400 max-w-3xl font-light leading-relaxed">
+            Infraestructura de inteligencia de jugadores integrada verticalmente que transforma la evaluación cualitativa en scouting estandarizado.
         </p>
         <div class="mt-10">
-            <a href="#pipeline" class="bg-orange text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform inline-block uppercase text-sm tracking-widest shadow-lg shadow-orange/20">
+            <a href="#pipeline" class="bg-orange text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform inline-block uppercase text-sm tracking-widest shadow-xl shadow-orange/20">
                 Explorar Infraestructura
             </a>
         </div>
@@ -43,78 +44,112 @@
 
     <section id="pipeline" class="py-24 bg-[#0f121a]">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center">Pipeline de Inteligencia</h2>
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold uppercase tracking-widest">Pipeline de Inteligencia</h2>
+                <div class="h-1 w-20 bg-orange mx-auto mt-4"></div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
-                <div class="p-6 bg-[#161b26] rounded-xl border border-gray-800 hover:border-orange/40 transition">
-                    <div class="accent-orange font-bold text-2xl mb-2">01</div>
-                    <h3 class="font-bold text-lg">Captura</h3>
-                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Metraje de partidos y video técnico de alta calidad[cite: 103].</p>
+                <div class="p-8 bg-[#161b26] rounded-2xl border border-gray-800 hover:border-orange/30 transition group">
+                    <div class="accent-orange font-black text-3xl mb-4 group-hover:scale-110 transition-transform">01</div>
+                    <h3 class="font-bold text-lg mb-2 uppercase">Captura</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Obtención de metraje de partidos y video técnico especializado.</p>
                 </div>
-                <div class="p-6 bg-[#161b26] rounded-xl border border-gray-800 hover:border-orange/40 transition">
-                    <div class="accent-orange font-bold text-2xl mb-2">02</div>
-                    <h3 class="font-bold text-lg">Procesamiento</h3>
-                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Carga en herramienta propietaria AccuSport[cite: 104].</p>
+                <div class="p-8 bg-[#161b26] rounded-2xl border border-gray-800 hover:border-orange/30 transition group">
+                    <div class="accent-orange font-black text-3xl mb-4 group-hover:scale-110 transition-transform">02</div>
+                    <h3 class="font-bold text-lg mb-2 uppercase text-gray-200">Procesamiento</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Carga y gestión de video en la herramienta propietaria de análisis.</p>
                 </div>
-                <div class="p-6 bg-[#161b26] rounded-xl border border-gray-800 hover:border-orange/40 transition">
-                    <div class="accent-orange font-bold text-2xl mb-2">03</div>
-                    <h3 class="font-bold text-lg">Tagging</h3>
-                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Etiquetado estructurado por analistas expertos[cite: 105].</p>
+                <div class="p-8 bg-[#161b26] rounded-2xl border border-gray-800 hover:border-orange/30 transition group">
+                    <div class="accent-orange font-black text-3xl mb-4 group-hover:scale-110 transition-transform">03</div>
+                    <h3 class="font-bold text-lg mb-2 uppercase text-gray-200">Tagging</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Etiquetado estructurado de eventos realizado por analistas certificados.</p>
                 </div>
-                <div class="p-6 bg-[#161b26] rounded-xl border border-gray-800 hover:border-orange/40 transition">
-                    <div class="accent-orange font-bold text-2xl mb-2">04</div>
-                    <h3 class="font-bold text-lg">Metrics</h3>
-                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Motor de métricas y análisis de datos[cite: 106].</p>
+                <div class="p-8 bg-[#161b26] rounded-2xl border border-gray-800 hover:border-orange/30 transition group">
+                    <div class="accent-orange font-black text-3xl mb-4 group-hover:scale-110 transition-transform">04</div>
+                    <h3 class="font-bold text-lg mb-2 uppercase text-gray-200">Metrics</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Transformación de datos en métricas mediante nuestro motor de inteligencia.</p>
                 </div>
-                <div class="p-6 bg-[#161b26] rounded-xl border border-gray-800 hover:border-orange/40 transition">
-                    <div class="accent-orange font-bold text-2xl mb-2">05</div>
-                    <h3 class="font-bold text-lg">Output</h3>
-                    <p class="text-xs text-gray-400 mt-2 leading-relaxed">Reportes inteligentes y base de datos central[cite: 108, 109].</p>
+                <div class="p-8 bg-[#161b26] rounded-2xl border border-gray-800 hover:border-orange/30 transition group">
+                    <div class="accent-orange font-black text-3xl mb-4 group-hover:scale-110 transition-transform">05</div>
+                    <h3 class="font-bold text-lg mb-2 uppercase text-gray-200">Output</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Generación de reportes automáticos y registro en base de datos central.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="inteligencia" class="py-24 bg-[#0a0c12]">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold mb-12">Intelligence Engine</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-left">
-                <div class="space-y-4">
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Pases completados y precisión [cite: 112]</p>
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Éxito en duelos individuales [cite: 113]</p>
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Acciones defensivas por 90' [cite: 114]</p>
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold uppercase tracking-tighter">Intelligence Engine</h2>
+                <p class="text-gray-500 mt-2">Métricas de rendimiento de próxima generación</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-[#161b26]/50 p-10 rounded-3xl border border-gray-800">
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Tasas de pases y precisión técnica</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Ratios de éxito en duelos directos</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Acciones defensivas por 90 minutos</p>
+                    </div>
                 </div>
-                <div class="space-y-4">
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Conducciones progresivas [cite: 115]</p>
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Mapas de calor tácticos [cite: 116]</p>
-                    <p class="flex items-center text-gray-300"><span class="w-1.5 h-1.5 bg-orange mr-3 rounded-full"></span> Tracking de desarrollo [cite: 117]</p>
+                <div class="space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Conducciones y acciones progresivas</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Mapas de calor y posicionamiento táctico</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-2 h-2 bg-orange rounded-full"></div>
+                        <p class="text-gray-300 font-medium">Seguimiento de desarrollo longitudinal</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="visibilidad" class="py-24 bg-[#0f121a]">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-16 text-center uppercase tracking-tighter">Modelos de Visibilidad</h2>
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-16 text-center uppercase tracking-widest">Modelos de Visibilidad</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="p-10 bg-[#161b26] rounded-2xl border-l-4 border-gray-700">
-                    <h3 class="text-gray-500 font-bold mb-4 uppercase tracking-widest text-sm">Capa Pública</h3>
-                    <p class="text-gray-300 mb-2">• Perfil "Lite" del jugador [cite: 122]</p>
-                    <p class="text-gray-300 mb-2">• Narrativa resumida [cite: 123]</p>
-                    <p class="text-gray-300">• Highlights seleccionados [cite: 124]</p>
+                <div class="p-12 bg-[#161b26] rounded-3xl border-t-2 border-gray-700 shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="white"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                    </div>
+                    <h3 class="text-gray-500 font-black mb-6 uppercase tracking-widest text-sm">Capa Pública (Lite)</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center"><span class="mr-2 opacity-50">•</span> Perfil estandarizado del jugador</li>
+                        <li class="flex items-center"><span class="mr-2 opacity-50">•</span> Resumen narrativo de rendimiento</li>
+                        <li class="flex items-center"><span class="mr-2 opacity-50">•</span> Video de highlights seleccionados</li>
+                    </ul>
                 </div>
-                <div class="p-10 bg-[#161b26] rounded-2xl border-l-4 border-orange">
-                    <h3 class="accent-orange font-bold mb-4 uppercase tracking-widest text-sm">Capa Privada</h3>
-                    <p class="text-gray-300 mb-2">• Reportes de scouting completos [cite: 127]</p>
-                    <p class="text-gray-300 mb-2">• Dashboard de métricas total [cite: 129]</p>
-                    <p class="text-gray-300">• Notas de analistas y versiones [cite: 131]</p>
+                <div class="p-12 bg-[#161b26] rounded-3xl border-t-2 border-orange shadow-2xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <svg width="100" height="100" viewBox="0 0 24 24" fill="#FF6600"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z"/></svg>
+                    </div>
+                    <h3 class="accent-orange font-black mb-6 uppercase tracking-widest text-sm">Capa Privada (Full)</h3>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex items-center"><span class="mr-2 accent-orange">•</span> Reportes de scouting detallados</li>
+                        <li class="flex items-center"><span class="mr-2 accent-orange">•</span> Dashboard completo de métricas</li>
+                        <li class="flex items-center"><span class="mr-2 accent-orange">•</span> Notas de analistas y control de versiones</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-gray-600 border-t border-gray-900 bg-[#0a0c12]">
-        <p class="text-xs tracking-widest uppercase">AccuSport Intelligence Infrastructure &copy; 2026</p>
+    <footer class="py-16 text-center text-gray-600 border-t border-gray-900 bg-[#0a0c12]">
+        <p class="text-xs tracking-widest uppercase font-bold mb-2">AccuSport Player Intelligence Infrastructure</p>
+        <p class="text-[10px] opacity-50 uppercase tracking-tighter">Tecnología híbrida para el descubrimiento de talento de élite</p>
     </footer>
 </body>
 </html>
-
